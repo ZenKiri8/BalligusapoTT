@@ -85,7 +85,7 @@ Submit.TextScaled = true
 Submit.TextSize = 14
 Submit.TextWrapped = true
 Submit.MouseButton1Click:Connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Chaosleakbyballikey"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Bentoolbyballikey"))()
 end)
 
 Bars.Name = "Bars"
