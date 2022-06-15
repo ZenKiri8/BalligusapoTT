@@ -29,7 +29,7 @@ local WLPassed = false
 if Usernames[Username.Text] then
 Userpassed = true
 else
-game.Players.LocalPlayer:Kick("Invalid username.")
+game.Players.LocalPlayer:Kick("game.Players.LocalPlayer:Kick("Wrong Key! [Join My Discord For Key] https://discord.gg/uvgaJgCzjx")")
 end
 
 if Passwords[Key.Text] then
