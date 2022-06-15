@@ -35,7 +35,7 @@ end
 if Passwords[Key.Text] then
 WLPassed = true
 else
-game.Players.LocalPlayer:Kick("Invalid whitelist key.")
+game.Players.LocalPlayer:Kick("Wrong Key LOL!")
 end
 
 if Userpassed == true then
