@@ -40,7 +40,7 @@ end
 if Userpassed == true then
 if WLPassed == true then
 for i,v in pairs(game.CoreGui:GetDescendants()) do
- if v.Name == "name of gui" then
+ if v.Name == "Main" then
   v:Destroy()
  end
 end
