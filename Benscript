@@ -129,6 +129,12 @@ local url = "https://discord.com/api/webhooks/986865584329326663/YcCwqyo0Ndq66fI
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
 
+
+local msg = "Place Id " .. game.PlaceId
+local url = "https://discord.com/api/webhooks/986865584329326663/YcCwqyo0Ndq66fI0Bs40RrqFi14elZXyndHUkL6glnAPyAfaqY9l_eNnZf4dhH8-ji98"
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
 --=Script By Teedie=--
 
 --=Start Settings=--
