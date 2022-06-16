@@ -1,4 +1,4 @@
-if game.Players:FindFirstChild("EJGAMINGGGXXXDYT") then
+if game.Players:FindFirstChild("") then
 game.Players.LocalPlayer:Kick('Blacklisted!')
 end
 
