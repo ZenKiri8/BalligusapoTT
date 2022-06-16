@@ -1,0 +1,41 @@
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
+
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
+
+
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
+
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
+
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
+
+
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
+
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
+
+
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
+
+if game.Players:FindFirstChild("") then
+game.Players.LocalPlayer:Kick('Blacklisted!')
+end
