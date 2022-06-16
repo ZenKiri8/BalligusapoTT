@@ -1,25 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Blacklist.txt"))()
 
 
-local Players = game:GetService("Players")
-Players.PlayerAdded:Connect(function(player)
-   for i,v in pairs(game.Players:GetPlayers()) do
-       game.Players[v.Name].Chatted:connect(function(chat)
-           if chat:match(";j") then
-               print("n")
-           end
-       end)
-   end
-end)
-
-for i,v in pairs(game.Players:GetPlayers()) do
-   game.Players[v.Name].Chatted:connect(function(chat)
-       if chat:match(".kick") then
-           game.Players.LocalPlayer:Kick("Kicked By: Balligusapo")
-       end
-   end)
-end
-
 
 local Login = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
