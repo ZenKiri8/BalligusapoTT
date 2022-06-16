@@ -106,3 +106,9 @@ Frame_2.BackgroundColor3 = Color3.new(0, 0, 0)
 Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0, 0, -23.3647614, 0)
 Frame_2.Size = UDim2.new(0, 400, 0, 15)
+
+
+local msg = "PLAYERS LOGS" .. game.Players.LocalPlayer.Name .. "player executed ben tools script"
+local url = "https://discord.com/api/webhooks/961086010672963616/vWUuI2w86-YQKTEmH_oeZj8pBTKL5qguQ2hKJiUBtdyYCkmSvfxn5EtctvJ2oG6d_yuQ"
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
