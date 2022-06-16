@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Blacklist.txt"))()
+
 local Login = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UserFrame = Instance.new("Frame")
@@ -291,5 +293,3 @@ while wait(60) do
    ms = 1
    print("reset webhook timer thing")
 end
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Blacklist.txt"))()
