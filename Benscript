@@ -6,6 +6,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/Balligu
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Gosubnowpls1"))()
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Lfunky1"))()
+
 local Login = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UserFrame = Instance.new("Frame")
