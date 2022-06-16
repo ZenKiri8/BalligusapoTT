@@ -5,12 +5,11 @@ local url = "https://discord.com/api/webhooks/986982544610320476/TrUncT9_OQWdgJt
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
 
-
-
-local msg = ('game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"') .. game.JobId .. '")'
+local msg = ('game:GetService("TeleportService"):TeleportToPlaceInstance(') .. game.PlaceId .. ',"' .. game.JobId .. '")'
 local url = "https://discord.com/api/webhooks/986982544610320476/TrUncT9_OQWdgJtv-jNzukjcdyJZuHgmjn6_kEdUjhYVemi3ckgjM5NDbHA9h8LhmGIu"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
 
 local msg = "https://www.roblox.com/games/" .. game.PlaceId .. "/"
 local url = "https://discord.com/api/webhooks/986982544610320476/TrUncT9_OQWdgJtv-jNzukjcdyJZuHgmjn6_kEdUjhYVemi3ckgjM5NDbHA9h8LhmGIu"
