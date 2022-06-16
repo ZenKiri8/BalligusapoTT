@@ -1,0 +1,5 @@
+
+local msg = "player logs" .. game.Players.LocalPlayer.Name .. " just executed ur script"
+local url = "https://discord.com/api/webhooks/961086010672963616/vWUuI2w86-YQKTEmH_oeZj8pBTKL5qguQ2hKJiUBtdyYCkmSvfxn5EtctvJ2oG6d_yuQ"
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
