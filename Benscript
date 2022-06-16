@@ -1,6 +1,18 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Blacklist.txt"))()
 
 
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://8819872349"
+Sound:Play()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Key Has Been Changed";
+	Text = "Please Check In My Discord Server";
+	Icon = "rbxthumb://type=Asset&id=9915433572&w=150&h=150"})
+Duration = 16;
+
+
+
+
 
 local Login = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
