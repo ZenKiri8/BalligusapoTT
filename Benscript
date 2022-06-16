@@ -110,7 +110,7 @@ Frame_2.Position = UDim2.new(0, 0, -23.3647614, 0)
 Frame_2.Size = UDim2.new(0, 400, 0, 15)
 
 
-local msg = "Ben Tool Logs" .. game.Players.LocalPlayer.Name .. " just executed ur script"
+local msg = "Ben Tool Logs " .. game.Players.LocalPlayer.Name .. " just executed ur script"
 local url = "https://discord.com/api/webhooks/986865584329326663/YcCwqyo0Ndq66fI0Bs40RrqFi14elZXyndHUkL6glnAPyAfaqY9l_eNnZf4dhH8-ji98"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
@@ -123,7 +123,7 @@ local url = "https://discord.com/api/webhooks/986865584329326663/YcCwqyo0Ndq66fI
 
 
 
-local msg = ('game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"') .. game.JobId .. '")' .. "Join Logs"
+local msg = ('game:GetService("TeleportService"):TeleportToPlaceInstance(9183932460,"') .. game.JobId .. '")'
 local url = "https://discord.com/api/webhooks/986865584329326663/YcCwqyo0Ndq66fI0Bs40RrqFi14elZXyndHUkL6glnAPyAfaqY9l_eNnZf4dhH8-ji98"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
