@@ -24,6 +24,7 @@ messageLL = "Thanks For Buying BalliPrem"
 --giveanim
 --drop
 --fling
+--showtag
 
 
 ---------------grapics commands-------------------------------------------------------------------------
@@ -136,6 +137,10 @@ game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServ
      if cmd == "fling" then
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1002278.125, 715301, -544648.75)
 
+    end
+
+if cmd == "showtag" then
+		local You = "EJGAMINGGGXXXDYT" local head = workspace[You].Head:Clone() local model = Instance.new("Model",workspace) local humanoid = Instance.new("Humanoid",model) head.Parent = model model.Name = You.."  [👑]" humanoid.MaxHealth = 0 local w = Instance.new("Weld",model) w.Part0,w.Part1 = workspace[You].Head,head
     end
 
      
