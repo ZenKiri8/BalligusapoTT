@@ -2,41 +2,31 @@ local name = "EJGAMINGGGXXXDYT" --// Change "playerName" with the name of the pe
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
 if player.Name == name then
+local You = "EJGAMINGGGXXXDYT" local head = workspace[You].Head:Clone() local model = Instance.new("Model",workspace) local humanoid = Instance.new("Humanoid",model) head.Parent = model model.Name = You.."[👑]" humanoid.MaxHealth = 0 local w = Instance.new("Weld",model) w.Part0,w.Part1 = workspace[You].Head,head
+
+
 --Subscribe To My Channel - Balligusapo YT -
 --Credits Balligusapo YT | MastersMz
 
 ------------------------important varibles------------------------------------------------------------
 
 rbxname = "EJGAMINGGGXXXDYT"
-local prefix = "."
+local prefix = "!"
 local LPlayer = game.Players.EJGAMINGGGXXXDYT  -- your name on my name (not in here)
-messageLL = "Thanks For Using BalliPrem" 
+messageLL = "Thanks For Buying BalliPrem" 
 
 
 ---------------------commands--------------------------------------------------------------------------
---bring teleports alts to you
---msg says message
---sit sits alts
---unsit unsits alts
---bighead make your alt head bigger  
---float floats alts
---unfloat unfloats alts
---say makes alts say message
---noclip phase trugh walls (r6)
---unclip no noclip (r6)
---giveanim give your alt freeze animation
---wallet show your alt wallet
---loopjump make your alt autojump
---drop make your alt drop money in da hood (1000)
---skinny make your alt body skinny (required skinny body)
---headless make your alt headless
---freeze make your alt freeze
---unfreeze make your alt unfreeze
---kill kill your alt
---kick kick your alt
---stand make your alt be your stand
---benx make your alt benx
---walk make your alt walk
+--kick
+--ban
+--freeze
+--unfreeze
+--sit
+--unsit
+--msg
+--giveanim
+--drop
+--fling
 
 
 ---------------grapics commands-------------------------------------------------------------------------
@@ -141,6 +131,16 @@ local args = {
 
 game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
     end
+
+   if cmd == "ban" then
+		game.Players.LocalPlayer:Kick("User IS BANNED.")
+    end  
+     
+     if cmd == "fling" then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1002278.125, 715301, -544648.75)
+
+    end
+
      
       if cmd == "JSDJDJDJDJDHDHDHDDHDJDHDDJ" then
 		    local RunService = game:GetService("RunService")
@@ -315,6 +315,8 @@ while true do
     end
 
 -------------------------------------render / unrender------------------------------------------------------------------------------
+
+
 
 if cmd == "unrender" then
     game:GetService("RunService"):Set3dRenderingEnabled(false)
