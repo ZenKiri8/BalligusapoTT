@@ -109,6 +109,12 @@ while true do wait()
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
 end
 end)
+Section:NewTextBox("Fov", "TextboxInfo", function(txt)
+local amount = 150
+
+game:GetService'Workspace'.Camera.FieldOfView = (txt)
+end)
+
 local Tab = Window:NewTab("Animation Gui")
 local Section = Tab:NewSection("Untitled Hood Animation")
 Section:NewButton("Untitled Hood Animation Gui", "ButtonInfo", function()
