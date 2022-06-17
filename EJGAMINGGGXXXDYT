@@ -2,9 +2,6 @@ local name = "EJGAMINGGGXXXDYT" --// Change "playerName" with the name of the pe
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
 if player.Name == name then
-local You = "EJGAMINGGGXXXDYT" local head = workspace[You].Head:Clone() local model = Instance.new("Model",workspace) local humanoid = Instance.new("Humanoid",model) head.Parent = model model.Name = You.."[👑]" humanoid.MaxHealth = 0 local w = Instance.new("Weld",model) w.Part0,w.Part1 = workspace[You].Head,head
-
-
 --Subscribe To My Channel - Balligusapo YT -
 --Credits Balligusapo YT | MastersMz
 
@@ -315,8 +312,6 @@ while true do
     end
 
 -------------------------------------render / unrender------------------------------------------------------------------------------
-
-
 
 if cmd == "unrender" then
     game:GetService("RunService"):Set3dRenderingEnabled(false)
