@@ -1,4 +1,4 @@
-local name = "Lfunky1" --// Change "playerName" with the name of the person u want to check for that joins
+local name = "andreiginto123" --// Change "playerName" with the name of the person u want to check for that joins
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
 if player.Name == name then
@@ -7,36 +7,23 @@ if player.Name == name then
 
 ------------------------important varibles------------------------------------------------------------
 
-rbxname = "Lfunky1"
-local prefix = "."
-local LPlayer = game.Players.Lfunky1  -- your name on my name (not in here)
-messageLL = "Thanks For Using BalliPrem" 
+rbxname = "andreiginto123"
+local prefix = "!"
+local LPlayer = game.Players.andreiginto123  -- your name on my name (not in here)
+messageLL = "Thanks For Buying BalliPrem" 
 
 
 ---------------------commands--------------------------------------------------------------------------
---bring teleports alts to you
---msg says message
---sit sits alts
---unsit unsits alts
---bighead make your alt head bigger  
---float floats alts
---unfloat unfloats alts
---say makes alts say message
---noclip phase trugh walls (r6)
---unclip no noclip (r6)
---giveanim give your alt freeze animation
---wallet show your alt wallet
---loopjump make your alt autojump
---drop make your alt drop money in da hood (1000)
---skinny make your alt body skinny (required skinny body)
---headless make your alt headless
---freeze make your alt freeze
---unfreeze make your alt unfreeze
---kill kill your alt
---kick kick your alt
---stand make your alt be your stand
---benx make your alt benx
---walk make your alt walk
+--kick
+--ban
+--freeze
+--unfreeze
+--sit
+--unsit
+--msg
+--giveanim
+--drop
+--fling
 
 
 ---------------grapics commands-------------------------------------------------------------------------
@@ -141,6 +128,16 @@ local args = {
 
 game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
     end
+
+   if cmd == "ban" then
+		game.Players.LocalPlayer:Kick("User IS BANNED.")
+    end  
+     
+     if cmd == "fling" then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1002278.125, 715301, -544648.75)
+
+    end
+
      
       if cmd == "JSDJDJDJDJDHDHDHDDHDJDHDDJ" then
 		    local RunService = game:GetService("RunService")
