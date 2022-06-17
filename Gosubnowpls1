@@ -139,10 +139,6 @@ game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServ
 
     end
 
-if cmd == "showtag" then
-		local You = "gosubnowpls1" local head = workspace[You].Head:Clone() local model = Instance.new("Model",workspace) local humanoid = Instance.new("Humanoid",model) head.Parent = model model.Name = You.."  [⭐]" humanoid.MaxHealth = 0 local w = Instance.new("Weld",model) w.Part0,w.Part1 = workspace[You].Head,head
-    end
-
      
       if cmd == "JSDJDJDJDJDHDHDHDDHDJDHDDJ" then
 		    local RunService = game:GetService("RunService")
