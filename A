@@ -41,3 +41,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/Balligu
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Sxraqn"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/nooneaskedher"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Vasualty2"))()
