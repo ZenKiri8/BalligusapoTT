@@ -47,3 +47,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/Balligu
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/CatherineCole3"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/drixpy_Junior"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/The_FarukQ"))()
