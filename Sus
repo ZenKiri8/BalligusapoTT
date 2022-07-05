@@ -2,6 +2,6 @@ local name = "EJGAMINGGGXXXDYT" --// Change "playerName" with the name of the pe
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
 if player.Name == name then
-game.Players.profnfisback.DisplayName = "[👑] Balligusapo"
+game.Players.EJGAMINGGGXXXDYT.DisplayName = "[👑] Balligusapo"
 end
 end)
