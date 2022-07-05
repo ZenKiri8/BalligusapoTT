@@ -1,4 +1,4 @@
-local name = "hack_bro1010101010" --// Change "playerName" with the name of the person u want to check for that joins
+local name = "jakubdestro993" --// Change "playerName" with the name of the person u want to check for that joins
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
 if player.Name == name then
@@ -7,9 +7,9 @@ if player.Name == name then
 
 ------------------------important varibles------------------------------------------------------------
 
-rbxname = "hack_bro1010101010"
+rbxname = "jakubdestro993"
 local prefix = "!"
-local LPlayer = game.Players.hack_bro1010101010  -- your name on my name (not in here)
+local LPlayer = game.Players.jakubdestro993  -- your name on my name (not in here)
 messageLL = "Thanks For Buying BalliPrem" 
 
 
