@@ -48,14 +48,3 @@ game.Players.gabpogi266.DisplayName = "[⚔️] Rip_pia"
 game.Players.gabpogi266.Name = "[⚔️] Rip_pia"
 end
 end)
-
-local name = "jakubdestro993" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-
-game.Players.jakubdestro993.DisplayName = "[⭐] Kimbladi"
-
-game.Players.jakubdestro993.Name = "[⭐] Kimbladi"
-end
-end)
