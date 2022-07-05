@@ -1,7 +1,5 @@
-local name = "EJGAMINGGGXXXDYT" --// Change "playerName" with the name of the person u want to check for that joins
 
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
 game.Players.EJGAMINGGGXXXDYT.DisplayName = "[👑] Balligusapo"
-end
-end)
+
+
+game.Players.EJGAMINGGGXXXDYT.Name = "[👑] Balligusapo"
