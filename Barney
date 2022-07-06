@@ -15,6 +15,14 @@ game.Players.gosubnowpls1.DisplayName = "[⭐] dtbbullet"
 end
 end)
 
+local name = "beat87267" --// Change "playerName" with the name of the person u want to check for that joins
+
+game:GetService'Players'.PlayerAdded:Connect(function(player)
+if player.Name == name then
+game.Players.beat87267.DisplayName = "[🌟] bosslittleman"
+end
+end)
+
 local name = "jojo_2163890" --// Change "playerName" with the name of the person u want to check for that joins
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
