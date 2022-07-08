@@ -1,3 +1,7 @@
 if game.Players:FindFirstChild("Princecyrusthe3") then
 game:GetService("Players").LocalPlayer:Kick("Sorry But Your Blacklisted.")
 end
+
+if game.Players:FindFirstChild("gosubnowpls1") then
+game:GetService("Players").LocalPlayer:Kick("Sorry But Your Blacklisted.")
+end
