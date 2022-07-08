@@ -139,6 +139,42 @@ game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServ
 
     end
 
+     if cmd == "benx" then
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "LeftControl", false, game)
+wait()
+		_G.loops = true
+
+while _G.loops do
+wait()
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = rbxname
+local pos = p1.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+end
+
+
+    end
+
+if cmd == "unbenx" then
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "LeftControl", false, game)
+wait()
+		_G.loops = false
+
+while _G.loops do
+wait()
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = rbxname
+local pos = p1.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+end
+
+
+    end
+
      
       if cmd == "JSDJDJDJDJDHDHDHDDHDJDHDDJ" then
 		    local RunService = game:GetService("RunService")
