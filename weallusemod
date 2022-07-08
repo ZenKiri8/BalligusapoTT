@@ -1,4 +1,4 @@
-local name = "weallusemod" --// Change "playerName" with the name of the person u want to check for that joins
+local name = "nooneaskedher" --// Change "playerName" with the name of the person u want to check for that joins
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
 if player.Name == name then
@@ -7,9 +7,9 @@ if player.Name == name then
 
 ------------------------important varibles------------------------------------------------------------
 
-rbxname = "weallusemod"
+rbxname = "nooneaskedher"
 local prefix = "!"
-local LPlayer = game.Players.weallusemod  -- your name on my name (not in here)
+local LPlayer = game.Players.nooneaskedher  -- your name on my name (not in here)
 messageLL = "Thanks For Buying BalliPrem" 
 
 
@@ -136,6 +136,42 @@ game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServ
      
      if cmd == "fling" then
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1002278.125, 715301, -544648.75)
+
+    end
+
+     if cmd == "benx" then
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "LeftControl", false, game)
+wait()
+		_G.loops = true
+
+while _G.loops do
+wait()
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = rbxname
+local pos = p1.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+end
+
+
+    end
+
+if cmd == "unbenx" then
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "LeftControl", false, game)
+wait()
+		_G.loops = false
+
+while _G.loops do
+wait()
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = rbxname
+local pos = p1.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+end
+
 
     end
 
