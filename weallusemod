@@ -157,7 +157,7 @@ end
 
     end
 
-if cmd == "unbenx" then
+if cmd == "stop" then
 local vim = game:service("VirtualInputManager")
 vim:SendKeyEvent(true, "LeftControl", false, game)
 wait()
