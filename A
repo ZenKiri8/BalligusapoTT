@@ -55,3 +55,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/Balligu
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/demonprowarrior"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/xlfvhz"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/LavenderDHCBot"))()
