@@ -7,14 +7,6 @@ game.Players.CourtneyTapia4.DisplayName = "[👑] Balligusapo"
 end
 end)
 
-local name = "14k_LAK" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.14k_LAK.DisplayName = "[🤡] Zkam"
-end
-end)
-
 local name = "beat87267" --// Change "playerName" with the name of the person u want to check for that joins
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
