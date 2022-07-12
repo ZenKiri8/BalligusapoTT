@@ -65,3 +65,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/Balligu
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/deathfru"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/TornadoTundra"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BalligusapoTT/BalligusapoTT/main/gabepanot"))()
