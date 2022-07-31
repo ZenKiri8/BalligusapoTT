@@ -119,6 +119,14 @@ game.Players.gabpogi266.DisplayName = "[⚔️] Rip_pia"
 end
 end)
 
+local name = "Sxraqn" --// Change "playerName" with the name of the person u want to check for that joins
+
+game:GetService'Players'.PlayerAdded:Connect(function(player)
+if player.Name == name then
+game.Players.Sxraqn.DisplayName = "[💫] x_x"
+end
+end)
+
 local AntiDisplayName = loadstring(game:HttpGet('https://pastebin.com/raw/hCMXnKWa'))(function()
     getgenv().Preferences = {}
 end)
