@@ -32,15 +32,6 @@ game.Players.gabepanot.DisplayName = "[⭐] Kalz"
 end
 end)
 
-local name = "Noobcomedor_decasada" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.Noobcomedor_decasada.DisplayName = "[💫] Sluck_NSK"
-end
-end)
-
-
 local name = "TornadoTundra" --// Change "playerName" with the name of the person u want to check for that joins
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
