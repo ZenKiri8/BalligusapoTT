@@ -7,6 +7,14 @@ game.Players.CourtneyTapia4.DisplayName = "[👑] Balligusapo"
 end
 end)
 
+local name = "sharkpapet_fan" --// Change "playerName" with the name of the person u want to check for that joins
+
+game:GetService'Players'.PlayerAdded:Connect(function(player)
+if player.Name == name then
+game.Players.sharkpapet_fan.DisplayName = "[⭐] Tora"
+end
+end)
+
 local name = "GamerPro102812" --// Change "playerName" with the name of the person u want to check for that joins
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
