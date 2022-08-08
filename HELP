@@ -22,7 +22,7 @@ T.Position = UDim2.new(0.000000,0, 1, 0)
 T.Size = UDim2.new(0.68, 30, 0.99, 1.2)
 T.Font = Enum.Font.SourceSansSemibold
 T.Text = "Report/Feedback"
-T.TextColor3 = Color3.new(0,0,0)
+T.TextColor3 = Color3.new(1,1,1)
 T.TextSize = 10
 T.TextWrapped = true
 T.MouseButton1Down:connect(function()
