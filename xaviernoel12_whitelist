@@ -1,4 +1,4 @@
-local name = "gosubnowpls" --// Change "playerName" with the name of the person u want to check for that joins
+local name = "xaivernoel12" --// Change "playerName" with the name of the person u want to check for that joins
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
 
@@ -16,11 +16,11 @@ if player.Name == name then
 
 ------------------------important varibles------------------------------------------------------------
 
-rbxname = "gosubnowpls"
+rbxname = "xaviernoel12"
 
 local prefix = "."
 
-local LPlayer = game.Players.gosubnowpls -- your name on my name (not in here)
+local LPlayer = game.Players.xaviernoel12 -- your name on my name (not in here)
 
 messageLL = "Thanks For Buying BalliPrem" 
 
@@ -181,11 +181,11 @@ game.Players.LocalPlayer.Character.Head.Anchored = false
 
     end
     
-    if cmd == "showtags" then
+    if cmd == "show" then
 
 		
 
-	game.Players["gosubnowpls"].Character.Humanoid.DisplayName = "[⭐] Test" 
+	game.Players["xaviernoel12"].Character.Humanoid.DisplayName = "[👑] Balli" 
 
 	
 
