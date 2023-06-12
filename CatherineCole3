@@ -1,108 +1,4 @@
-local name = "CatherineCole3" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
---Subscribe To My Channel - Balligusapo YT -
---Credits Balligusapo YT | MastersMz
-
-------------------------important varibles------------------------------------------------------------
-
-rbxname = "CatherineCole3"
-local prefix = "!"
-local LPlayer = game.Players.CatherineCole3  -- your name on my name (not in here)
-messageLL = "Thanks For Buying BalliPrem" 
-
-
----------------------commands--------------------------------------------------------------------------
---kick
---ban
---freeze
---unfreeze
---sit
---unsit
---msg
---giveanim
---drop
---fling
---showtag
-
-
----------------grapics commands-------------------------------------------------------------------------
-
---gr1 reduces grapics on alts more cpu power and gpu
---gr2 same as gr1 just much more 
---fpscap - number fps cap 
---unrender REALLY good for performance 
---render renders 
---checkmin checks if you have minimezed tabs
-
---------------------------------------------------------------------------------------------------------
-
-LPlayer.Chatted:Connect(function(msg)
-	msg = msg:lower()
-	if string.sub(msg,1,3) == "/e " then
-		msg = string.sub(msg,4)
-	end
-	if string.sub(msg,1,1) == prefix then
-		local cmd
-		local space = string.find(msg," ")
-		if space then
-			cmd = string.sub(msg,2,space-1)
-		else
-			cmd = string.sub(msg,2)
-		end
-		
---------------------------------commands scripts----------------------------------------------------------
-		
-		if cmd == "bring" then
-		    local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
-local p2 = rbxname
-local pos = p1.CFrame
-
-p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
-	end
-
-		if cmd == "msg" then
-		    local args = {
-			[1] = messageLL,
-			[2] = "All"
-		}
-
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-
-		if cmd == "sit" then
-		    game.Players.LocalPlayer.Character.Humanoid.Sit = true
-    end
-
-		if cmd =="unsit" then
-		    game.Players.LocalPlayer.Character.Humanoid.Sit = false
-    end
-     
-        if cmd == "say" then
-            		if cmd == "say" then
-            		    local var = string.sub(msg,space+1)
-		                game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(var, "All")
-    end
-    end
- 
-        if cmd == "giveanim" then
-		while true do
-local Animate = game.Players.LocalPlayer.Character.Animate
-Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
-Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782841498"
-Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
-Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
-Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
-Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
-Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
-game.Players.LocalPlayer.Character.Humanoid.Jump = false
-wait(1)
-end
-    end
-
-        if cmd == "kill" then
-		game.Players.LocalPlayer.Character.Humanoid:Destroy()
+r.Character.Humanoid:Destroy()
     end
 
         if cmd == "freeze" then
@@ -140,7 +36,7 @@ game:GetService("ReplicatedStorage"):FindFirstChild(".gg/untitledhood"):FireServ
     end
 
      
-      if cmd == "JSDJDJDJDJDHDHDHDDHDJDHDDJ" then
+      if cmd == "JSDJDJDJDJDHDHDHDDHDJDHDDJ" the
 		    local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
  
