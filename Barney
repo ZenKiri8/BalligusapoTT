@@ -3,7 +3,7 @@ local name = "gosubnowpls" --// Change "playerName" with the name of the person 
 
 game:GetService'Players'.PlayerAdded:Connect(function(player)
 if player.Name == name then
-game.Players.CourtneyTapia4.DisplayName = "[🤡] Balligusapo"
+game.Players.gosubnowpls.DisplayName = "[🤡] Balligusapo"
 end
 end)
 
