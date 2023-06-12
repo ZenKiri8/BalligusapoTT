@@ -50,6 +50,7 @@ messageLL = "Thanks For Buying BalliPrem"
 
 --ban your alt
 
+--showtags show your tags
 ---------------grapics commands-------------------------------------------------------------------------
 
 --gr1 reduces grapics on alts more cpu power and gpu
@@ -177,6 +178,16 @@ game.Players.LocalPlayer.Character.Head.Anchored = false
         if cmd == "kill" then
 
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+
+    end
+    
+    if cmd == "showtags" then
+
+		
+
+	game.Players["gosubnowpls"].Character.Humanoid.DisplayName = "[⭐] Test" 
+
+	
 
     end
 
