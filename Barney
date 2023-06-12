@@ -7,69 +7,6 @@ game.Players.CourtneyTapia4.DisplayName = "[👑] Balligusapo"
 end
 end)
 
-local name = "altbr1" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.altbr1.DisplayName = "[☑️] SpeedW"
-end
-end)
-
-local name = "sharkpapet_fan" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.sharkpapet_fan.DisplayName = "[⭐] Tora"
-end
-end)
-
-local name = "GamerPro102812" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.GamerPro102812.DisplayName = "[⭐] GamerPro102812"
-end
-end)
-
-local name = "Jacob_Seven" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.Jacob_Seven.DisplayName = "[⭐] Guest"
-end
-end)
-
-local name = "Yaque_gamer2000" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.Yaque_gamer2000.DisplayName = "[⭐] Yaque_gamer2000"
-end
-end)
-
-local name = "gabepanot" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.gabepanot.DisplayName = "[⭐] Kalz"
-end
-end)
-
-local name = "TornadoTundra" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.TornadoTundra.DisplayName = "[💯] Tornado"
-end
-end)
-
-local name = "deathfru" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game.Players.deathfru.DisplayName = "[🌟] Lxfna"
-end
-end)
 
 local name = "weallusemod" --// Change "playerName" with the name of the person u want to check for that joins
 
