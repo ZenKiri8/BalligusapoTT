@@ -188,7 +188,7 @@ game.Players.LocalPlayer.Character.Head.Anchored = false
 
   
 
- game.Players["todayislol1001"].Character.Humanoid.DisplayName = "[⭐] Test" 
+ game.Players["todayislol1001"].Character.Humanoid.DisplayName = "[🖕🏻] Test" 
 
 	
 
