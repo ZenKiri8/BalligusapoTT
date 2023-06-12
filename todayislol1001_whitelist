@@ -185,7 +185,7 @@ game.Players.LocalPlayer.Character.Head.Anchored = false
 
 		
 
-	game.Players["gosubnowpls"].Character.Humanoid.DisplayName = "[💎😎] Mafaka" 
+	game.Players["gosubnowpls"].Character.Humanoid.DisplayName = "[💎] Mafaka" 
 
 	
 
