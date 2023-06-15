@@ -253,7 +253,45 @@ end
 
     end
 
-        
+if cmd == "benx" then
+_G.Toggle = true
+
+while _G.Toggle do
+wait()
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = rbxname
+local pos = p1.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://3152394906"
+
+local track = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Animator:LoadAnimation(anim)
+track.Looped = true
+track:Play()
+end   
+end
+
+if cmd == "unbenx" then
+_G.Toggle = false
+
+while _G.Toggle do
+wait()
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = rbxname
+local pos = p1.CFrame
+
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://"
+
+local track = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Animator:LoadAnimation(anim)
+track.Looped = false
+track:Play()
+end   
+end        
 
 -----------------------------grapics scripts-----------------------------------------------------------------------------------
 
