@@ -293,6 +293,27 @@ track:Play()
 end   
 end        
 
+if cmd == "drop" then
+            		if cmd == "drop" then
+            		    local var = string.sub(msg,space+1)
+		game.ReplicatedStorage.MainEvent:FireServer("DropMoney",var)
+    end
+   end
+
+if cmd == "warn" then
+            		if cmd == "warn" then
+            		    local var = string.sub(msg,space+1)
+		game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+	Title = "Warning";
+
+	Text = (var);
+
+	Icon = "rbxthumb://type=Asset&id=6525527347&w=150&h=150"})
+
+Duration = 16;
+    end
+    end
 -----------------------------grapics scripts-----------------------------------------------------------------------------------
 
 if cmd == "gr1" then
