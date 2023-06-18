@@ -264,12 +264,8 @@ local pos = p1.CFrame
 
 p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
 
-local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://3152394906"
-
-local track = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Animator:LoadAnimation(anim)
-track.Looped = true
-track:Play()
+local vim = game:service("VirtualInputManager")
+vim:SendKeyEvent(true, "LeftControl", false, game)
 end   
 end
 
